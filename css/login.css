@@ -6,6 +6,7 @@ html,body{
     background: url(../assets/images/login_bg.jpg) no-repeat center;
     background-size: cover;
     padding: 20px;
+    overflow: hidden;
 }
 .loginAndRegBox{
     width: 400px;
