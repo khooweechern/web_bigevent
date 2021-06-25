@@ -108,7 +108,11 @@ $(function(){
               }
           });
     }
-
+    // 事件委托绑定编辑按钮
+    $('tbody').on('click','#btn-edit',function(){
+        localStorage.setItem('art_id',$(this).attr("data-id"))
+        location.href = '/article/art_mod.html'
+    })
     // 事件委托绑定删除按钮事件
     $('tbody').on('click','#btn-del',function(){
         let len =$('#btn-del').length;
